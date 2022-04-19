@@ -122,19 +122,6 @@ form:valid .fa {
   color: white;
 }
 
-a {
-  position: absolute;
-  display: none;
-  top: 70px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-
 button {
   display: block;
   margin: 15px auto;
