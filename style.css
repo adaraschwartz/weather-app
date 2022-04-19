@@ -3,6 +3,16 @@ body {
   opacity: 0.9;
 }
 
+.sig {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #880e4f;
+  opacity: 0.8;
+  padding: 10px;
+}
+
 .container {
   display: block;
   margin: 0 auto;
@@ -113,8 +123,8 @@ form:valid .fa {
 }
 
 a {
-  display: none;
   position: absolute;
+  display: none;
   top: 70px;
   bottom: 0;
   left: 0;
