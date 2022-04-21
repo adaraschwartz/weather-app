@@ -21,7 +21,7 @@ let now = new Date();
 let timeDate = document.querySelector("#current-date");
 timeDate.innerHTML = newDate(now);
 
-// search engine city temperature, wind speed, humidity
+// search engine city temperature, wind speed, humidity, description
 
 function showCityTemp(response) {
   document.querySelector("#new-city").innerHTML = response.data.name;
@@ -34,6 +34,8 @@ function showCityTemp(response) {
   document.querySelector(".temperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}°C`;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 
 let searchedCity = document.querySelector("#search-form");
