@@ -38,8 +38,10 @@ function showCityTemp(response) {
     response.data.weather[0].description;
 }
 
+celsTemperature = Math.round(response.data.main.temp);
+
 let searchedCity = document.querySelector("#search-form");
-searchedCity.addEventListener("click", search);
+searchedCity.addEventListener("submit", search);
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
@@ -66,3 +68,17 @@ function getCurrentLocation(event) {
 
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
+
+// faren to cels conversion
+
+let celsTemperature = null;
+
+function showFaren(event) {
+  event.preventDefault();
+  let farenTemp = (celsTemperature * 9) / 5 + 32;
+  let celcTemp = document.querySelector(".temperature");
+  celcTemp.innerHTML = math.round(farenTemp);
+}
+
+let farenLink = document.querySelector("#f-link");
+farenLink.addEventListener("click", showFaren);
