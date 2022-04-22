@@ -80,5 +80,14 @@ function showFaren(event) {
   celcTemp.innerHTML = math.round(farenTemp);
 }
 
+function showCels(event) {
+  event.preventDefault();
+  let celcTemp = document.querySelector(".temperature");
+  celcTemp.innerHTML = celsTemperature;
+}
+
 let farenLink = document.querySelector("#f-link");
 farenLink.addEventListener("click", showFaren);
+
+let celsLink = document.querySelector("#c-link");
+celsLink.addEventListener("click", showCels);
