@@ -39,7 +39,7 @@ function showCityTemp(response) {
 }
 
 let searchedCity = document.querySelector("#search-form");
-searchedCity.addEventListener("submit", search);
+searchedCity.addEventListener("click", search);
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
