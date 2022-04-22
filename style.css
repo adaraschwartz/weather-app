@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://wallpapercave.com/wp/wp5062546.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp3284839.gif);
   opacity: 0.9;
 }
 
@@ -8,7 +8,7 @@ body {
   text-align: center;
   font-size: 12px;
   font-family: "Nanum Gothic", sans-serif;
-  color: #880e4f;
+  color: #64ffda;
   opacity: 0.8;
   padding: 10px;
 }
@@ -24,13 +24,18 @@ body {
   display: block;
   margin: 40px auto;
   padding: 10px;
-  background-color: #fce4ec;
+  background-color: #0b1a2e;
+}
+
+.col {
+  color: #64ffda;
 }
 
 h1 {
   margin: 0 auto;
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
+  color: #64ffda;
 }
 
 #current-date {
@@ -39,6 +44,7 @@ h1 {
   padding: 20px 0px 0px 0px;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 18px;
+  color: #64ffda;
 }
 
 h4 {
@@ -48,6 +54,7 @@ h4 {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 27px;
   padding: 10px;
+  color: #64ffda;
 }
 
 #wind,
@@ -56,7 +63,7 @@ h4 {
   text-align: center;
   margin: 0 auto;
   font-family: "Nanum Gothic", sans-serif;
-  color: #880e4f;
+  color: #64ffda;
   opacity: 0.7;
   padding: 10px 0px 0px 0px;
 }
@@ -69,10 +76,10 @@ form {
   transition: all 1s;
   width: 50px;
   height: 50px;
-  background: white;
+  background: #ccd6f6;
   box-sizing: border-box;
   border-radius: 25px;
-  border: 4px solid white;
+  border: 4px solid #ccd6f6;
   padding: 5px;
   margin: 10px;
 }
@@ -101,7 +108,7 @@ input {
   top: 0;
   right: 0;
   border-radius: 50%;
-  color: #f8bbd0;
+  color: #0b1a2e;
   text-align: center;
   font-size: 1.2em;
   transition: all 1s;
@@ -127,10 +134,10 @@ form:valid .fa {
 button {
   display: block;
   margin: 15px auto;
-  border: 1px solid #880e4f;
+  border: 1px solid #64ffda;
   border-radius: 30px;
-  background: #880e4f;
-  color: #fff;
+  background: #64ffda;
+  color: #0b1a2e;
   font-family: "Helvetica";
   font-size: 11px;
   text-transform: uppercase;
@@ -159,7 +166,7 @@ form:valid a {
 .rainicon {
   text-align: center;
   font-size: 50px;
-  color: #880e4f;
+  color: #64ffda;
 }
 
 .row {
@@ -174,5 +181,5 @@ form:valid a {
   opacity: 0.5;
   font-size: 30px;
   margin: 20px;
-  color: #880e4f;
+  color: #64ffda;
 }
