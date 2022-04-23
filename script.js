@@ -36,9 +36,8 @@ function showCityTemp(response) {
   )}°C`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  celsTemperature = Math.round(response.data.main.temp);
 }
-
-celsTemperature = Math.round(response.data.main.temp);
 
 let searchedCity = document.querySelector("#search-form");
 searchedCity.addEventListener("submit", search);
@@ -77,7 +76,7 @@ function showFaren(event) {
   event.preventDefault();
   let farenTemp = (celsTemperature * 9) / 5 + 32;
   let celcTemp = document.querySelector(".temperature");
-  celcTemp.innerHTML = math.round(farenTemp);
+  celcTemp.innerHTML = Math.round(farenTemp);
 }
 
 function showCels(event) {

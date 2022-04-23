@@ -68,6 +68,13 @@ h4 {
   padding: 10px 0px 0px 0px;
 }
 
+#c-link,
+#f-link {
+  color: #ccd6f6;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
 form {
   position: relative;
   top: 50%;
