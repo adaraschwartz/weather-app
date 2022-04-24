@@ -33,7 +33,7 @@ function showCityTemp(response) {
   )} mph`;
   document.querySelector(".temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°C`;
+  )}`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   celsTemperature = Math.round(response.data.main.temp);
