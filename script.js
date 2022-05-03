@@ -21,6 +21,49 @@ let now = new Date();
 let timeDate = document.querySelector("#current-date");
 timeDate.innerHTML = newDate(now);
 
+// forecast
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+  let forecastHTML = `<div class="row">`;
+  forecast.forEach(function (forecastDay) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col">
+        <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+          <br>
+          <i class="fa-solid fa-cloud-bolt"></i>
+          <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> ${Math.round(
+            forecastDay.temp.max
+          )}° </span>
+          <span class="weather-forecast-temperature-min"> ${Math.round(
+            forecastDay.temp.min
+          )}° </span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  let apiKey = "b770895b4cca764b15317d1f52e38bc4";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=${units}`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 // search engine city temperature, wind speed, humidity, description
 
 function showCityTemp(response) {
@@ -37,6 +80,8 @@ function showCityTemp(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   celsTemperature = Math.round(response.data.main.temp);
+
+  getForecast(response.data.coord);
 }
 
 let searchedCity = document.querySelector("#search-form");
@@ -90,3 +135,5 @@ farenLink.addEventListener("click", showFaren);
 
 let celsLink = document.querySelector("#c-link");
 celsLink.addEventListener("click", showCels);
+
+// call forecast test
