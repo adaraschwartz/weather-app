@@ -51,6 +51,13 @@ function displayForecast(response) {
   `;
   });
 
+  function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[date.getDay()];
+  }
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);

@@ -10,64 +10,84 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/18382fd4b0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/18382fd4b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div class="container">
-          <div class="card" style="max-width: 1000px;">
-      <div class="card-body">
-        <form action="" id="search-form">
-      <input id="search-input" placeholder="type city name.." type="search" required>
-      <i class="fa fa-search"></i>
-    </form>
-    <h1 id="new-city">-</h1>
-    <p id="current-date"> Saturday 11:04 </br> </p>
-    <p id="humidity">Humidity: -</p>
-    <p id="wind">Wind: - mph</p>
-    <p id="description"> - </p>
-        <h4><span class="temperature"> </span><a href="#" id="c-link">°C | </a><a href = "#" id="f-link">°F</a></h4>
-          </div class ="forecast">
-      <div class="row">
-        <div class="col">
-          Monday
-          <br>
-          <i class="fa-solid fa-cloud-bolt"></i>
-          <p id="Monday">12°C</p>
-        </div>
-            <div class="col">
-          Tuesday
-          <br>
-          <i class="fa-solid fa-cloud"></i>
-          <p id="Tuesday">12°C</p>
-        </div>
-            <div class="col">
-          Wednesday
-          <br>
-          <i id="cloud" class="fa-solid fa-cloud-bolt"></i>
-          <p id="Wednesday">12°C</p>
-        </div>
-            <div class="col">
-          Thursday
-          <br>
-          <i class="fa-solid fa-cloud-bolt"></i>
-          <p id="Thursday">12°C</p>
-        </div>
-            <div class="col">
-          Friday
-          <br>
-         <i class="fa-solid fa-cloud"></i>
-         <p id="Friday">12°C</p>
-      <br>
+    <div class="container">
+      <div class="card" style="max-width: 1000px">
+        <div class="card-body">
+          <form action="" id="search-form">
+            <input
+              id="search-input"
+              placeholder="type city name.."
+              type="search"
+              required
+            />
+            <i class="fa fa-search"></i>
+          </form>
+          <h1 id="new-city">-</h1>
+          <p id="current-date">Saturday 11:04 <br /></p>
+          <p id="humidity">Humidity: -</p>
+          <p id="wind">Wind: - mph</p>
+          <p id="description">-</p>
+          <h4>
+            <span class="temperature"> </span><a href="#" id="c-link">°C | </a
+            ><a href="#" id="f-link">°F</a>
+          </h4>
+          <div id="forecast" class="forecast">
+            <div class="row">
+              <div class="col">
+                Monday
+                <br />
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <p id="Monday">12°C</p>
+              </div>
+              <div class="col">
+                Tuesday
+                <br />
+                <i class="fa-solid fa-cloud"></i>
+                <p id="Tuesday">12°C</p>
+              </div>
+              <div class="col">
+                Wednesday
+                <br />
+                <i id="cloud" class="fa-solid fa-cloud-bolt"></i>
+                <p id="Wednesday">12°C</p>
+              </div>
+              <div class="col">
+                Thursday
+                <br />
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <p id="Thursday">12°C</p>
+              </div>
+              <div class="col">
+                Friday
+                <br />
+                <i class="fa-solid fa-cloud"></i>
+                <p id="Friday">12°C</p>
+                <br />
+              </div>
+            </div>
+          </div>
+          <button id="current-button">Current Location</button>
+          <p class="sig">
+            <a href="https://github.com/adaraschz/weather-app" target="_blank"
+              >Open source code by Adara Schwartz</a
+            >
+          </p>
         </div>
       </div>
-      <button id="current-button" > Current Location </button>
-      <p class="sig"><a href="https://github.com/adaraschz/weather-app" target="_blank">Open source code by Adara Schwartz</a></p>
-      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
-
